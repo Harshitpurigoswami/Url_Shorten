@@ -53,8 +53,8 @@ html {
 }
 
 body {
-  background: #0B101B;
   background: url(../images/main-bg.png) no-repeat center;
+  background-color: #0B101B;
   background-size: cover;
 }
 
@@ -134,4 +134,117 @@ header {
 }
 .main-container .url-input::placeholder {
   color: #C9CED6;
+}
+.main-container .auto-paste-wrap {
+  margin-top: 32px;
+}
+.main-container .auto-paste-wrap .form-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.main-container .auto-paste-wrap .form-check-label {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+}
+.main-container .auto-paste-wrap .form-check-input {
+  width: 44px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+}
+.main-container .auto-paste-wrap p span {
+  color: #EB568E;
+}
+
+main {
+  padding-bottom: 50px;
+}
+
+.table-sec {
+  margin: auto;
+  overflow: auto;
+}
+.table-sec .table {
+  width: 1241px;
+  margin: auto;
+  border-spacing: 0 3px;
+  border-collapse: separate;
+  text-align: left;
+}
+.table-sec .table tr {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.table-sec .table th {
+  background: #181E29;
+  color: #C9CED6;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+  padding: 25px;
+  border: 0;
+}
+.table-sec .table th:first-child {
+  border-radius: 10px 0 0px 0px;
+}
+.table-sec .table th:last-child {
+  border-radius: 0 10px 0px 0px;
+}
+.table-sec .table td {
+  background: #0E131E;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1019607843);
+  border: 0;
+  padding: 13px 25px;
+  vertical-align: middle;
+  color: #C9CED6;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+}
+.table-sec .table td span {
+  display: inline-block;
+}
+.table-sec .table .active-stauts {
+  color: #1EB036;
+}
+.table-sec .table .inactive-stauts {
+  color: #B0901E;
+}
+
+.theme-btn {
+  background: #181E29;
+  border: 1px solid #353C4A;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 48px;
+  padding: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  rotate: 90deg;
+}
+.theme-btn span {
+  padding: 8px 14px;
+  display: inline-block;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: left;
+  color: #C9CED6;
+  border-radius: inherit;
+  cursor: pointer;
+}
+.theme-btn span img {
+  display: inline-block;
+  margin-right: 10px;
+}
+.theme-btn .active {
+  background: #144EE3;
 }/*# sourceMappingURL=style.css.map */

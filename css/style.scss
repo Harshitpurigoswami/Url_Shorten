@@ -18,10 +18,14 @@ body,
 html {
     height: 100%;
     width: 100%;
-}
+} 
+
 
 $Inter-font: Inter;
 $dark-color: #181E29;
+$white-color: #C9CED6;
+$primary-color: #144EE3; 
+
 .dark-btn {
     border: 1px solid #353C4A;
     border-radius: 48px;
@@ -39,8 +43,8 @@ $dark-color: #181E29;
 }
 
 .primary-btn {
-    background: #144EE3;
-    border: 1px solid #144EE3;
+    background: $primary-color;
+    border: 1px solid $primary-color;
     box-shadow: 10px 9px 22px 0px #144EE361;
     font-family: $Inter-font;
     font-size: 16px;
@@ -59,8 +63,8 @@ $dark-color: #181E29;
 }
 
 body {
-    background: #0B101B;
     background: url(../images/main-bg.png) no-repeat center;
+    background-color: #0B101B;
     background-size: cover;
 }
 
@@ -83,7 +87,7 @@ header {
         font-weight: 800;
         line-height: 80.01px;
         text-align: center;
-        background-image: linear-gradient(89.92deg, #144EE3 -0.02%, #EB568E 18.86%, #A353AA 64.49%, #144EE3 100.67%);
+        background-image: linear-gradient(89.92deg, $primary-color -0.02%, #EB568E 18.86%, #A353AA 64.49%, $primary-color 100.67%);
         color: transparent;
         background-size: 100%;
         background-repeat: repeat;
@@ -100,10 +104,10 @@ header {
         font-weight: 300;
         line-height: 23.5px;
         text-align: center;
-        color: #C9CED6;
+        color: $white-color;
         max-width: 634px;
         margin: auto;
-        margin-bottom: 46px; 
+        margin-bottom: 46px;
     }
 
     .input-cover {
@@ -111,16 +115,19 @@ header {
         position: relative;
         margin: auto;
         display: flex;
-        align-items: center; 
+        align-items: center;
+
         .primary-btn {
             position: absolute;
             right: 8px;
         }
-        .link-icon{
+
+        .link-icon {
             position: absolute;
             left: 25px;
         }
-    } 
+    }
+
     .url-input {
         width: 100%;
         border-radius: 48px;
@@ -133,13 +140,145 @@ header {
         font-weight: 300;
         line-height: 28px;
         text-align: left;
-        color: #C9CED6;
+        color: $white-color;
         outline: none !important;
         padding-left: 70px;
-        &::placeholder{
-            color: #C9CED6;
+
+        &::placeholder {
+            color: $white-color;
 
         }
 
+    }
+
+    .auto-paste-wrap {
+        margin-top: 32px;
+
+        .form-switch {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .form-check-label {
+            font-family: $Inter-font;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+            color: white;
+
+        }
+
+        .form-check-input {
+            width: 44px;
+            height: 24px;
+            padding: 0;
+            margin: 0;
+        }
+
+        p {
+            span {
+                color: #EB568E;
+
+            }
+        }
+    }
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+.table-sec {
+    margin: auto;
+    overflow: auto;
+    .table {
+        width: 1241px;
+        margin: auto;
+        border-spacing: 0 3px;
+        border-collapse: separate;
+        text-align: left;
+
+        tr {
+            box-shadow: 0px 4px 10px 0px #0000001A;
+        }
+
+        th {
+            background: #181E29;
+            color: $white-color;
+            font-family: $Inter-font;
+            font-size: 15px;
+            font-weight: 700;
+            text-align: left;
+            padding: 25px;
+            border: 0;
+
+            &:first-child {
+                border-radius: 10px 0 0px 0px;
+            }
+
+            &:last-child {
+                border-radius: 0 10px 0px 0px;
+            }
+        }
+
+        td {
+            background: #0E131E;
+            box-shadow: 0px 4px 10px 0px #0000001A;
+            border: 0;
+            padding: 13px 25px;
+            vertical-align: middle;
+            color: $white-color;
+            font-family: $Inter-font;
+            font-size: 14px;
+            font-weight: 300;
+
+            span {
+                display: inline-block;
+            }
+        }
+
+        .active-stauts {
+            color: #1EB036;
+
+        }
+
+        .inactive-stauts {
+            color: #B0901E;
+
+        }
+    }
+}
+
+.theme-btn {
+    background: #181E29;
+    border: 1px solid #353C4A;
+    box-shadow: 0px 4px 10px 0px #0000001A;
+    border-radius: 48px;
+    padding: 8px;
+    width: fit-content;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    rotate: 90deg;
+    span {
+        padding: 8px 14px;
+        display: inline-block;
+        font-family: $Inter-font;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
+        color: #C9CED6; 
+        border-radius: inherit;
+        cursor: pointer;
+        img{
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+    .active{
+        background: $primary-color;
     }
 }

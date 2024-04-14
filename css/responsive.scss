@@ -1,9 +1,19 @@
-@media (max-width: 786){
-    .container{
-        width: 100%;
+@media (max-width: 786px){ 
+
+    .main-container {
+        h1{
+            font-size: 38px;
+            margin-bottom: 18px;
+            line-height: 48px;
+        }
+        p{
+            margin-bottom: 32px;
+        }
+    }
+    .theme-btn{
+        right: -60px;
     }
 }
 
-@media screen and (max-width: 327px) and (min-width: 768px){
-    // 
+@media screen and (max-width: 327px) and (min-width: 768px){ 
 }

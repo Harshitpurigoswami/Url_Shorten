@@ -1,18 +1,8 @@
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    // autoWidth:true,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:3
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:3
-        }
-    }
-})
+
+function themeBtn(a) {
+    var lightBtn = document.querySelector("#lightBtn");
+    var darkBtn = document.querySelector("#darkBtn");
+    darkBtn.className = "";
+    lightBtn.className = "";
+    a.className = "active";   
+}

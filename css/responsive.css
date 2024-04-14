@@ -1,5 +1,13 @@
-@media (max-width: 786) {
-  .container {
-    width: 100%;
+@media (max-width: 786px) {
+  .main-container h1 {
+    font-size: 38px;
+    margin-bottom: 18px;
+    line-height: 48px;
+  }
+  .main-container p {
+    margin-bottom: 32px;
+  }
+  .theme-btn {
+    right: -60px;
   }
 }/*# sourceMappingURL=responsive.css.map */
