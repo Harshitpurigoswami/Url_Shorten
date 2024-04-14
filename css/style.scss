@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+$Inter-font: Inter;
+$dark-color: #181E29;
+.dark-btn {
+    border: 1px solid #353C4A;
+    border-radius: 48px;
+    display: inline-block;
+    padding: 16px 25px;
+    background: $dark-color;
+    font-family: $Inter-font;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 10px 0px #0000001A;
+
+}
+
+.primary-btn {
+    background: #144EE3;
+    border: 1px solid #144EE3;
+    box-shadow: 10px 9px 22px 0px #144EE361;
+    font-family: $Inter-font;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 21px 36px;
+    display: inline-block;
+    border-radius: 48px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+}
+
+body {
+    background: #0B101B;
+    background: url(../images/main-bg.png) no-repeat center;
+    background-size: cover;
+}
+
+header {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.main-container {
+    max-width: 966px;
+    margin: auto;
+    padding-top: 230px;
+
+    h1 {
+        font-family: $Inter-font;
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 80.01px;
+        text-align: center;
+        background-image: linear-gradient(89.92deg, #144EE3 -0.02%, #EB568E 18.86%, #A353AA 64.49%, #144EE3 100.67%);
+        color: transparent;
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: $Inter-font;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 23.5px;
+        text-align: center;
+        color: #C9CED6;
+        max-width: 634px;
+        margin: auto;
+        margin-bottom: 46px; 
+    }
+
+    .input-cover {
+        max-width: 659px;
+        position: relative;
+        margin: auto;
+        display: flex;
+        align-items: center; 
+        .primary-btn {
+            position: absolute;
+            right: 8px;
+        }
+        .link-icon{
+            position: absolute;
+            left: 25px;
+        }
+    } 
+    .url-input {
+        width: 100%;
+        border-radius: 48px;
+        border: 4px solid #353C4A;
+        background: #181E29;
+        box-shadow: 0px 4px 10px 0px #0000001A;
+        height: 76px;
+        font-family: $Inter-font;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
+        color: #C9CED6;
+        outline: none !important;
+        padding-left: 70px;
+        &::placeholder{
+            color: #C9CED6;
+
+        }
+
+    }
+}
