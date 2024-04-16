@@ -1,6 +1,9 @@
-@media (max-width: 786px){ 
-
+@media (max-width:991px){ 
+    .primary-btn{
+        padding: 16px 24px;
+    }
     .main-container {
+        padding-top: 90px; 
         h1{
             font-size: 38px;
             margin-bottom: 18px;
@@ -9,11 +12,32 @@
         p{
             margin-bottom: 32px;
         }
+        .url-input{
+            height: 68px;
+        }
     }
     .theme-btn{
         right: -60px;
     }
+    
 }
-
-@media screen and (max-width: 327px) and (min-width: 768px){ 
-}
+@media (max-width: 767px){
+    body{
+        background-image: url(../images/cubes-sm-bg.png);
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+    .main-container {
+        padding-top: 55px;
+        h1 {
+            font-size: 35px; 
+            line-height: 43px;
+        }
+        .input-cover{
+            .primary-btn{
+                padding: 16px 18px;
+            }
+        }
+    } 
+} 

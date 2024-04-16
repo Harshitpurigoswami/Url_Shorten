@@ -1,109 +1,134 @@
 <!DOCTYPE html>
-<html lang="en"  >
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Url Shorten</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Url Shorten</title> 
+  <meta name="theme-color" content="#0B101B">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+</head>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/style.css" rel="stylesheet"> 
-    <link href="css/responsive.css" rel="stylesheet">  
-</head> 
-<body data-bs-theme="dark"> 
+<body data-bs-theme="dark">
+  <div class="container ">
     <header>
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-                <a href="index.html"><img src="images/logo.svg" class="img-fluid" alt=""></a>
-                <div class="btn-group">
-                    <a href="#" class="d-flex align-items-center dark-btn" data-bs-toggle="modal" data-bs-target="#loginModal">Login<img src="images/sign-in-icon.svg" class="ms-2 img-fluid" alt=""></a>
-                    <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#registerModal">Register Now</a>
-                </div>
-            </div>
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html"><img src="images/logo.svg" class="img-fluid" alt=""></a>
+        <div class="btn-group">
+          <a href="#" class="d-flex align-items-center dark-btn" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login<img src="images/sign-in-icon.svg" class="ms-2 img-fluid" alt=""></a>
+          <a href="#" class="primary-btn d-none d-md-inline-block" data-bs-toggle="modal"
+            data-bs-target="#registerModal">Register Now</a>
         </div>
+      </div>
     </header>
-    <div class="container">
-        <main>
-            <div class="main-container">
-                <h1>Shorten Your Loooong Links :<code>)</code></h1>
-                <p>Linkly is an efficient and easy-to-use URL shortening service that streamlines your online experience.</p>
-                <form action="">
-                    <div class="input-cover">
-                        <input type="text" class="url-input" placeholder="Enter the link here">
-                        <img src="images/link-icon.svg" class="img-fluid link-icon" alt="">
-                        <button type="submit" class="primary-btn">Shorten Now!</button>
-                    </div>
-                </form>
-                <div class="auto-paste-wrap">
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" checked id="flexSwitchCheckDefault">
-                        <label class="form-check-label" for="flexSwitchCheckDefault" >Auto Paste from Clipboard </label>
-                      </div>
-                      <p class="mt-4">  You can create <span>05 </span> more links. Register  Now to enjoy Unlimited usage
-                        question-circle</p>
-                </div>
-            </div>
-            <div class="table-sec">
-                <table class="table">
-                    <tr>
-                        <th>Short Link</th>
-                        <th>Original Link</th>
-                        <th>QR Code</th>
-                        <th>Clicks</th>
-                        <th>Status</th>
-                        <th>Date <img src="images/date-triangle-icon.svg" class="img-fluid" alt=""></th> 
-                    </tr>
-                    <tr>
-                        <td>https://linkly.com/Bn41aCOlnxj <span class="ms-2"><img src="images/copy-icon.svg" class="img-fluid" alt=""></span></td>
-                        <td><span  class="me-2"><img src="images/twitter-icon.svg" class="img-fluid" alt=""></span> https://www.twitter.com/tweets/8erelCoihu/ </td>
-                        <td><img src="images/qr-code-img.svg" class="img-fluid" alt=""></td>
-                        <td>1313</td>
-                        <td class="active-stauts">Active <span  class="ms-2"><img src="images/active-icon.svg" class="img-fluid" alt=""></span></td>
-                        <td>Oct - 10 -2023</td> 
-                    </tr> 
-                    <tr>
-                        <td>https://linkly.com/Bn41aCOlnxj <span class="ms-2"><img src="images/copy-icon.svg" class="img-fluid" alt=""></span></td>
-                        <td><span  class="me-2"><img src="images/youtube-icon.svg" class="img-fluid" alt=""></span>https://www.youtube.com/watch?v=8J7ZmH0lXuk</td>
-                        <td><img src="images/qr-code-img.svg" class="img-fluid" alt=""></td>
-                        <td>4313</td>
-                        <td class="inactive-stauts">Inactive   <span  class="ms-2"><img src="images/inactive-icon.svg" class="img-fluid" alt=""></span></td>
-                        <td>Oct - 08 -2023</td> 
-                    </tr> 
-                    <tr>
-                        <td>https://linkly.com/Bn41aCOlnxj <span class="ms-2"><img src="images/copy-icon.svg" class="img-fluid" alt=""></span></td>
-                        <td><span  class="me-2"><img src="images/adventure-icon.svg" class="img-fluid" alt=""></span> https://www.adventuresinwanderlust.com/</td>
-                        <td><img src="images/qr-code-img.svg" class="img-fluid" alt=""></td>
-                        <td>1013</td>
-                        <td class="active-stauts">Active <span  class="ms-2"><img src="images/active-icon.svg" class="img-fluid" alt=""></span></td>
-                        <td>Oct - 10 -2023</td> 
-                    </tr> 
-                    <tr>
-                        <td>https://linkly.com/Bn41aCOlnxj <span class="ms-2"><img src="images/copy-icon.svg" class="img-fluid" alt=""></span></td>
-                        <td><span  class="me-2"><img src="images/twitter-icon.svg" class="img-fluid" alt=""></span> https://www.twitter.com/tweets/8erelCoihu/ </td>
-                        <td><img src="images/qr-code-img.svg" class="img-fluid" alt=""></td>
-                        <td>1313</td>
-                        <td class="active-stauts">Active <span  class="ms-2"><img src="images/active-icon.svg" class="img-fluid" alt=""></span></td>
-                        <td>Oct - 10 -2023</td> 
-                    </tr> 
-                    <tr>
-                        <td>https://linkly.com/Bn41aCOlnxj <span class="ms-2"><img src="images/copy-icon.svg" class="img-fluid" alt=""></span></td>
-                        <td><span  class="me-2"><img src="images/youtube-icon.svg" class="img-fluid" alt=""></span>https://www.youtube.com/watch?v=8J7ZmH0lXuk</td>
-                        <td><img src="images/qr-code-img.svg" class="img-fluid" alt=""></td>
-                        <td>4313</td>
-                        <td class="inactive-stauts">Inactive   <span  class="ms-2"><img src="images/inactive-icon.svg" class="img-fluid" alt=""></span></td>
-                        <td>Oct - 08 -2023</td> 
-                    </tr> 
-                </table>
-            </div>
-        </main>
+    <main>
+      <div class="main-container">
+        <h1>Shorten Your Loooong Links :<code>)</code></h1>
+        <p>Linkly is an efficient and easy-to-use URL shortening service that streamlines your online experience.</p>
+        <form action="">
+          <div class="input-cover">
+            <input type="text" class="url-input" placeholder="Enter the link here">
+            <img src="images/link-icon.svg" class="img-fluid link-icon" alt="">
+            <button type="submit" class="primary-btn d-none d-md-block">Shorten Now!</button>
+            <button type="submit" class="primary-btn d-block d-md-none"><img src="images/arrow-right.png"
+                class="img-fluid" alt=""></button>
+          </div>
+        </form>
+        <div class="auto-paste-wrap">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" checked id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Auto Paste from Clipboard </label>
+          </div>
+          <p class="mt-4"> You can create <span>05 </span> more links. <a href="#"
+              class="fw-bold text-decoration-underline" data-bs-toggle="modal" data-bs-target="#registerModal">Register
+              Now</a> to enjoy Unlimited usage
+            question-circle</p>
+        </div>
+      </div>
+      <div class="table-sec">
+        <table class="table">
+          <tr>
+            <th>Short Link</th>
+            <th>Original Link</th>
+            <th>QR Code</th>
+            <th>Clicks</th>
+            <th>Status</th>
+            <th>Date <img src="images/date-triangle-icon.svg" class="img-fluid" alt=""></th>
+          </tr>
+          <tr>
+            <td>https://linkly.com/Bn41aCOlnxj <span class="ms-2"><img src="images/copy-icon.svg" class="img-fluid"
+                  alt=""></span></td>
+            <td><span class="me-2"><img src="images/twitter-icon.svg" class="img-fluid" alt=""></span>
+              https://www.twitter.com/tweets/8erelCoihu/ </td>
+            <td><img src="images/qr-code-img.svg" class="img-fluid" alt=""></td>
+            <td>1313</td>
+            <td class="active-stauts">Active <span class="ms-2"><img src="images/active-icon.svg" class="img-fluid"
+                  alt=""></span></td>
+            <td>Oct - 10 -2023</td>
+          </tr>
+          <tr>
+            <td>https://linkly.com/Bn41aCOlnxj <span class="ms-2"><img src="images/copy-icon.svg" class="img-fluid"
+                  alt=""></span></td>
+            <td><span class="me-2"><img src="images/youtube-icon.svg" class="img-fluid"
+                  alt=""></span>https://www.youtube.com/watch?v=8J7ZmH0lXuk</td>
+            <td><img src="images/qr-code-img.svg" class="img-fluid" alt=""></td>
+            <td>4313</td>
+            <td class="inactive-stauts">Inactive <span class="ms-2"><img src="images/inactive-icon.svg"
+                  class="img-fluid" alt=""></span></td>
+            <td>Oct - 08 -2023</td>
+          </tr>
+          <tr>
+            <td>https://linkly.com/Bn41aCOlnxj <span class="ms-2"><img src="images/copy-icon.svg" class="img-fluid"
+                  alt=""></span></td>
+            <td><span class="me-2"><img src="images/adventure-icon.svg" class="img-fluid" alt=""></span>
+              https://www.adventuresinwanderlust.com/</td>
+            <td><img src="images/qr-code-img.svg" class="img-fluid" alt=""></td>
+            <td>1013</td>
+            <td class="active-stauts">Active <span class="ms-2"><img src="images/active-icon.svg" class="img-fluid"
+                  alt=""></span></td>
+            <td>Oct - 10 -2023</td>
+          </tr>
+          <tr>
+            <td>https://linkly.com/Bn41aCOlnxj <span class="ms-2"><img src="images/copy-icon.svg" class="img-fluid"
+                  alt=""></span></td>
+            <td><span class="me-2"><img src="images/twitter-icon.svg" class="img-fluid" alt=""></span>
+              https://www.twitter.com/tweets/8erelCoihu/ </td>
+            <td><img src="images/qr-code-img.svg" class="img-fluid" alt=""></td>
+            <td>1313</td>
+            <td class="active-stauts">Active <span class="ms-2"><img src="images/active-icon.svg" class="img-fluid"
+                  alt=""></span></td>
+            <td>Oct - 10 -2023</td>
+          </tr>
+          <tr>
+            <td>https://linkly.com/Bn41aCOlnxj <span class="ms-2"><img src="images/copy-icon.svg" class="img-fluid"
+                  alt=""></span></td>
+            <td><span class="me-2"><img src="images/youtube-icon.svg" class="img-fluid"
+                  alt=""></span>https://www.youtube.com/watch?v=8J7ZmH0lXuk</td>
+            <td><img src="images/qr-code-img.svg" class="img-fluid" alt=""></td>
+            <td>4313</td>
+            <td class="inactive-stauts">Inactive <span class="ms-2"><img src="images/inactive-icon.svg"
+                  class="img-fluid" alt=""></span></td>
+            <td>Oct - 08 -2023</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <div class="d-none d-md-block">
+      <div class="theme-btn">
+        <span id="lightBtn" onclick="themeBtn(this);"><img src="images/sun-icon.svg" class="img-fluid"
+            alt="">Light</span>
+        <span id="darkBtn" class="active" onclick="themeBtn(this);"><img src="images/moon-icon.svg" class="img-fluid"
+            alt="">Dark Theme</span>
+      </div>
     </div>
-    <div class="theme-btn">
-        <span  id="lightBtn" onclick="themeBtn(this);"><img src="images/sun-icon.svg" class="img-fluid" alt="">Light</span>
-        <span  id="darkBtn" class="active" onclick="themeBtn(this);"><img src="images/moon-icon.svg" class="img-fluid" alt="">Dark Theme</span>
-    </div>
-    
-<!-- Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -111,23 +136,23 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-        </div> 
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -139,57 +164,57 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <form class="row g-3">
-                <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputPassword4" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress2" class="form-label">Address 2</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputCity" class="form-label">City</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="col-md-4">
-                  <label for="inputState" class="form-label">State</label>
-                  <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="col-md-2">
-                  <label for="inputZip" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Check me out
-                    </label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary">Sign in</button>
-                </div>
-              </form>
-        </div> 
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/app.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
